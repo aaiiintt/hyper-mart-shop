@@ -1,6 +1,6 @@
 # Hyper Mart Shop
 
-A tiny retro product gallery built with vanilla TypeScript and Tailwind CSS. The final build is a plain static bundle in `public/` that you can drop onto any static host.
+A tiny retro product gallery built with vanilla TypeScript and Tailwind CSS. The final build is a plain static bundle in `public/` that you can drop onto any static host. True.
 
 ## Prerequisites
 - Node.js 18 or newer (npm included)
