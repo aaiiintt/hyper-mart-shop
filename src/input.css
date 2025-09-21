@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS from the <style> block */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@layer base {
+    html, body {
+        font-family: 'VT323', monospace;
+        cursor: url('https://cursors.s3.eu-west-3.amazonaws.com/pointer.png'), auto;
+        -webkit-font-smoothing: none !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        font-smooth: never;
+        text-rendering: optimizeSpeed;
+        overflow-x: hidden; /* Prevent horizontal scroll issues */
+    }
+}
+.product-row, .buy-button {
+    cursor: url('https://cursors.s3.eu-west-3.amazonaws.com/hand.png'), pointer;
+}
+.expanded-content {
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Animations for the main title */
+        @keyframes rainbow-shadow-flow {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        @keyframes text-glitch {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(3px, -3px); }
+            50% { transform: translate(-3px, 3px); }
+            75% { transform: translate(3px, 3px); }
+        }
+
+        .retro-title {
+            animation: text-glitch 0.1s infinite;
+        }
+        .retro-title-shadow {
+             text-shadow: 4px 4px 0 #FF00FF;
+             animation: rainbow-shadow-flow 2s linear infinite;
+        }
+        
+        #main-title-text {
+            display: inline-block;
+            transform-origin: left center;
+            /* Transition removed for instant scaling */
+        }
+
+        /* CRT Screen Effect */
+        @keyframes flicker {
+          0%, 100% { opacity: 0.8; }
+          50% { opacity: 0.7; }
+        }
+
+        .crt-wrapper {
+            position: relative;
+            overflow: hidden; /* Important for containing pseudo-elements */
+            transform: scale(1.02); /* Slight barrel distortion */
+        }
+
+        .crt-wrapper::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3) 1px,
+                transparent 1px,
+                transparent 3px
+            );
+            z-index: 1000;
+            pointer-events: none;
+            animation: flicker 0.15s infinite;
+        }
+
+        .crt-wrapper::after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* Reduced vignette */
+            z-index: 1001;
+            pointer-events: none;
+        }
