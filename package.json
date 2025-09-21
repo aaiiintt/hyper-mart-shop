@@ -10,7 +10,9 @@
     "build": "npm run build:css && npm run build:ts",
     "watch:css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
     "watch:ts": "tsc --watch",
-    "watch": "concurrently \"npm:watch:css\" \"npm:watch:ts\""
+    "watch": "concurrently \"npm:watch:css\" \"npm:watch:ts\"",
+    "prestart": "npm run build",
+    "start": "node index.js"
   },
   "devDependencies": {
     "concurrently": "^8.0.0",
