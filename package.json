@@ -7,7 +7,8 @@
   "scripts": {
     "build:css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css",
     "build:ts": "tsc",
-    "build": "npm run build:css && npm run build:ts",
+    "build:data": "node scripts/copy-data.mjs",
+    "build": "npm run build:data && npm run build:css && npm run build:ts",
     "watch:css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
     "watch:ts": "tsc --watch",
     "watch": "concurrently \"npm:watch:css\" \"npm:watch:ts\"",

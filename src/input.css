@@ -12,6 +12,7 @@
         -moz-osx-font-smoothing: grayscale !important;
         font-smooth: never;
         text-rendering: optimizeSpeed;
+        min-height: 100%;
         overflow-x: hidden; /* Prevent horizontal scroll issues */
     }
 }
@@ -57,7 +58,16 @@
         .crt-wrapper {
             position: relative;
             overflow: hidden; /* Important for containing pseudo-elements */
-            transform: scale(1.02); /* Slight barrel distortion */
+            width: min(100%, 70rem);
+            margin-inline: auto;
+            transform: none;
+            transform-origin: center top;
+        }
+
+        @media (min-width: 768px) {
+            .crt-wrapper {
+                transform: scale(1.02); /* Slight barrel distortion, desktop only */
+            }
         }
 
         .crt-wrapper::before {

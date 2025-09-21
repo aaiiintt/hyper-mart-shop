@@ -5,110 +5,42 @@ interface Product {
   imageUrl: string;
 }
 
-const products: Product[] = [
-  {
-    name: "ARCTIC Liquid Freezer III 240 A-RGB - Water Cooling PC, All-in-One CPU AIO Water Cooler, Intel & AMD compatible, efficient PWM-controlled pump, fan: 200-1800 rpm, LGA1851/1700 Contact Frame - Black",
-    price: "£77.00",
-    url: "https://www.amazon.co.uk/dp/B09VH4M76W?linkCode=spc&tag=crackunit-21&creativeASIN=B09VH4M76W&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/41oeZboFysL._AC_.jpg",
-  },
-  {
-    name: "Noctua NF-A12x25 PWM chromax.black.swap, Premium Quiet Fan, 4-Pin (120mm, Black)",
-    price: "£30.95",
-    url: "https://www.amazon.co.uk/dp/B09C6DQDNT?linkCode=spc&tag=crackunit-21&creativeASIN=B09C6DQDNT&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/411APmwuymL._AC_.jpg",
-  },
-  {
-    name: "Hikari Medium Sweet White Miso Paste 400 g",
-    price: "£4.56",
-    url: "https://www.amazon.co.uk/dp/B078NKBLHH?linkCode=spc&tag=crackunit-21&creativeASIN=B078NKBLHH&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/417U7U618SL._AC_.jpg",
-  },
-  {
-    name: "Emma Basic - Seaweed Furikake seasoning 100g | Rice Topping | Avocado Topping | High Fibre | Source of Protein | No additives",
-    price: "£7.89",
-    url: "https://www.amazon.co.uk/dp/B098D5RKP9?linkCode=spc&tag=crackunit-21&creativeASIN=B098D5RKP9&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/31Z9wXldazL._AC_.jpg",
-  },
-  {
-    name: "Yum Asia Tsuki Mini Rice Cooker with Shinsei Ceramic Bowl (2.5 cups, 0.45 litre) 5 Rice Cooking Functions, 2 Multicooker Functions, Hidden LED Display, 220-240V UK (Pebble Grey)",
-    price: "£89.90",
-    url: "https://www.amazon.co.uk/dp/B0B42W8TLT?linkCode=spc&tag=crackunit-21&creativeASIN=B0B42W8TLT&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/31R4DjhzxBL._AC_.jpg",
-  },
-  {
-    name: "OXO Good Grips Kitchen & Herb Scissors, Silver/Black",
-    price: "£13.99",
-    url: "https://www.amazon.co.uk/dp/B000KILLXM?linkCode=spc&tag=crackunit-21&creativeASIN=B000KILLXM&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/315FSlKMboL._AC_.jpg",
-  },
-  {
-    name: "Isopropanol Alcohol IPA 99.9% 1L",
-    price: "£6.59",
-    url: "https://www.amazon.co.uk/dp/B08FJ74J22?linkCode=spc&tag=crackunit-21&creativeASIN=B08FJ74J22&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/21ssgpZfl7S._AC_.jpg",
-  },
-  {
-    name: "DEHA Design Boston Aluminium Picture Frame, Matt Black A3, 29.7x42cm",
-    price: "£21.21",
-    url: "https://www.amazon.co.uk/dp/B07DC7WYS2?linkCode=spc&tag=crackunit-21&creativeASIN=B07DC7WYS2&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/417UwQ6xL4L._AC_.jpg",
-  },
-  {
-    name: "Run the Song: Writing About Running About Listening (Ben Ratliff)",
-    price: null,
-    url: "https://www.amazon.co.uk/dp/1644453282?linkCode=spc&tag=crackunit-21&creativeASIN=1644453282&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/51xiJ31yAxL._AC_.jpg",
-  },
-  {
-    name: "Konesky Cherry Toilet Brush and Holder Set, Cherry Shaped",
-    price: "£13.59",
-    url: "https://www.amazon.co.uk/dp/B07JGPHBP9?linkCode=spc&tag=crackunit-21&creativeASIN=B07JGPHBP9&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/31dEJ6StxVL._AC_.jpg",
-  },
-  {
-    name: "OBSBOT Meet SE 1080P 100FPS Webcam, AI Framing Streaming Camera, Gesture Control, HDR (Space Grey)",
-    price: "£67.00",
-    url: "https://www.amazon.co.uk/dp/B0DQ196WLW?linkCode=spc&tag=crackunit-21&creativeASIN=B0DQ196WLW&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/31SlDkRLTVL._AC_.jpg",
-  },
-  {
-    name: "Psyllium Husk Fibre Supplement 4000mg with Acidophilus, 120 Vegan Capsules",
-    price: "£13.29",
-    url: "https://www.amazon.co.uk/dp/B08WM1VP8V?linkCode=spc&tag=crackunit-21&creativeASIN=B08WM1VP8V&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/41D7sx2NToL._AC_.jpg",
-  },
-  {
-    name: "Braun Digital Alarm Clock with Snooze, Negative LCD Display, Rotating Bezel, Crescendo Beep, Black (BC24B)",
-    price: "£26.49",
-    url: "https://www.amazon.co.uk/dp/B0CJFVW93V?linkCode=spc&tag=crackunit-21&creativeASIN=B0CJFVW93V&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/410hBm8fqdL._AC_.jpg",
-  },
-  {
-    name: "Moondrop Space Travel TWS Earphones, Bluetooth 5.3 Noise Canceling True Wireless IEMs",
-    price: "£20.99",
-    url: "https://www.amazon.co.uk/dp/B0CCVCPCNR?linkCode=spc&tag=crackunit-21&creativeASIN=B0CCVCPCNR&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/31i7WFKHfUL._AC_.jpg",
-  },
-  {
-    name: "Your Life Is Manufactured: How We Make Things, Why It Matters, and How We Can Do It Better (Tim Minshall)",
-    price: "£15.80",
-    url: "https://www.amazon.co.uk/dp/0571381014?linkCode=spc&tag=crackunit-21&creativeASIN=0571381014&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/51UbdWigXyL._AC_.jpg",
-  },
-  {
-    name: "UGREEN Nexode Magnetic Wireless Power Bank 10000mAh, 20W USB-C, MagSafe Compatible",
-    price: "£18.99",
-    url: "https://www.amazon.co.uk/dp/B0CH33F5P2?linkCode=spc&tag=crackunit-21&creativeASIN=B0CH33F5P2&asc_item-id=amzn1.ideas.FLAP8Q4I7G78&ref_=aip_sf_list_spv_ons_mixed_d_asin",
-    imageUrl: "https://m.media-amazon.com/images/I/31A1TsyE7CL._AC_.jpg",
-  },
-];
+const PRODUCT_DATA_URL = './data/products.json';
 
 const productList = document.querySelector<HTMLElement>('#product-list');
 
 if (!productList) {
   throw new Error('Expected #product-list container to exist in the DOM.');
 }
+
+const showErrorMessage = (message: string) => {
+  productList.innerHTML = '';
+  const errorRow = document.createElement('div');
+  errorRow.className = 'p-6 text-center text-xl font-bold text-white bg-black bg-opacity-40';
+  errorRow.textContent = message;
+  productList.append(errorRow);
+};
+
+const scaleTitle = () => {
+  window.requestAnimationFrame(() => {
+    const title = document.getElementById('main-title-text');
+    const container = title?.parentElement;
+
+    if (!title || !container) {
+      return;
+    }
+
+    title.style.transform = 'scaleX(1)';
+
+    const containerWidth = Math.max(container.clientWidth - 5, 0);
+    const titleWidth = title.scrollWidth;
+
+    if (titleWidth > containerWidth && containerWidth > 0) {
+      const scaleFactor = containerWidth / titleWidth;
+      title.style.transform = `scaleX(${scaleFactor})`;
+    }
+  });
+};
 
 const resetAllProducts = () => {
   productList.querySelectorAll<HTMLElement>('.expanded-content').forEach((content) => {
@@ -215,29 +147,68 @@ const createProduct = (product: Product) => {
   return wrapper;
 };
 
-products.forEach((product) => {
-  productList.append(createProduct(product));
-});
+const renderProducts = (products: Product[]) => {
+  productList.replaceChildren();
+  const fragment = document.createDocumentFragment();
+  products.forEach((product) => {
+    fragment.append(createProduct(product));
+  });
+  productList.append(fragment);
+  resetAllProducts();
+  scaleTitle();
+};
 
-const scaleTitle = () => {
-  window.requestAnimationFrame(() => {
-    const title = document.getElementById('main-title-text');
-    const container = title?.parentElement;
+const isProductRecord = (value: unknown): value is Record<string, unknown> =>
+  typeof value === 'object' && value !== null;
 
-    if (!title || !container) {
+const parseProducts = (rawData: unknown): Product[] => {
+  if (!Array.isArray(rawData)) {
+    throw new Error('Product data must be an array.');
+  }
+
+  return rawData.map((item, index) => {
+    if (!isProductRecord(item)) {
+      throw new Error(`Product at index ${index} is not an object.`);
+    }
+
+    const name = typeof item.name === 'string' ? item.name : null;
+    const url = typeof item.url === 'string' ? item.url : null;
+    const imageUrl = typeof item.imageUrl === 'string' ? item.imageUrl : null;
+    const price = typeof item.price === 'string' ? item.price : null;
+
+    if (!name || !url || !imageUrl) {
+      throw new Error(`Product at index ${index} is missing a name, url, or imageUrl.`);
+    }
+
+    return { name, url, imageUrl, price };
+  });
+};
+
+const fetchProducts = async (): Promise<Product[]> => {
+  const response = await fetch(PRODUCT_DATA_URL, { cache: 'no-cache' });
+
+  if (!response.ok) {
+    throw new Error(`Failed to load product data (status ${response.status})`);
+  }
+
+  const data = await response.json();
+  return parseProducts(data);
+};
+
+const initialisePage = async () => {
+  try {
+    const products = await fetchProducts();
+
+    if (products.length === 0) {
+      showErrorMessage('Come back soon — products are on their way.');
       return;
     }
 
-    title.style.transform = 'scaleX(1)';
-
-    const containerWidth = Math.max(container.clientWidth - 5, 0);
-    const titleWidth = title.scrollWidth;
-
-    if (titleWidth > containerWidth && containerWidth > 0) {
-      const scaleFactor = containerWidth / titleWidth;
-      title.style.transform = `scaleX(${scaleFactor})`;
-    }
-  });
+    renderProducts(products);
+  } catch (error) {
+    console.error('Failed to load products', error);
+    showErrorMessage('Sorry, we could not load the product list. Please try again later.');
+  }
 };
 
 if (document.fonts?.ready) {
@@ -254,3 +225,5 @@ if (document.fonts?.ready) {
 }
 
 window.addEventListener('resize', scaleTitle);
+
+void initialisePage();
