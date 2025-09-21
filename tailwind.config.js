@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
     "./public/**/*.{html,js}",
@@ -6,5 +8,11 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase }) {
+      addBase({
+        body: { overflowX: 'hidden' },
+      });
+    }),
+  ],
 };

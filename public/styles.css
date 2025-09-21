@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html, body {
   font-family: 'VT323', monospace;
   cursor: url('https://cursors.s3.eu-west-3.amazonaws.com/pointer.png'), auto;
