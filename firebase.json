@@ -10,5 +10,14 @@
       "functions"
     ],
     "alwaysDeployFromSource": true
+  },
+  "hosting": {
+    "public": "public",
+    "site": "buy-what-i-buy",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }
