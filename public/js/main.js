@@ -55,15 +55,15 @@ const createProduct = (product) => {
         previewImg.style.display = 'none';
     });
     const title = document.createElement('h2');
-    title.className = 'text-xl md:text-3xl font-bold truncate';
+    title.className = 'text-xl md:text-3xl font-bold truncate text-gray-100';
     title.textContent = product.name;
     leftSide.append(previewImg, title);
     const icon = document.createElement('span');
-    icon.className = 'text-3xl md:text-5xl font-bold toggle-icon ml-4';
+    icon.className = 'text-3xl md:text-5xl font-bold toggle-icon ml-4 text-gray-100';
     icon.textContent = '+';
     row.append(leftSide, icon);
     const content = document.createElement('div');
-    content.className = 'expanded-content hidden p-4 md:p-8 bg-black bg-opacity-20';
+    content.className = 'expanded-content hidden p-4 md:p-8 bg-gray-700 bg-opacity-30';
     const layout = document.createElement('div');
     layout.className = 'flex flex-col md:flex-row gap-8';
     const imageColumn = document.createElement('div');
@@ -81,7 +81,7 @@ const createProduct = (product) => {
     detailsColumn.className = 'flex-grow flex flex-col justify-between';
     const textWrapper = document.createElement('div');
     const heading = document.createElement('h3');
-    heading.className = 'text-2xl md:text-4xl font-bold mb-4';
+    heading.className = 'text-2xl md:text-4xl font-bold mb-4 text-gray-100';
     heading.textContent = product.name;
     const price = document.createElement('p');
     price.className = 'text-4xl md:text-6xl font-bold text-[#FFFF00] mb-6';
